@@ -1,0 +1,390 @@
+/*Estilos Gerais*/
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+p {
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+img {
+	display: block;
+}
+
+.btn {
+	border: 3px solid #fec63e;
+	padding: 10px 30px;
+	color: #fec63e;
+	font-size: 14px;
+	line-height: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: .1em;
+	transition: all .25s ease-in-out;
+}
+
+.btn:hover {
+	color: #fff;
+	border-color: #fff;
+}
+
+.btn.btn-preto:hover {
+	color: #000;
+	border-color: #000;
+}
+
+.subtitle {
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 30px;
+	letter-spacing: .1em;
+	color: #000;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.subtitle:after {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: #000;
+	margin: 8px auto;
+}
+
+.subtitle-inside {
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 30px;
+	letter-spacing: .1em;
+	color: #000;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.subtitle-inside:after {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: #000;
+	margin: 8px 0;
+}
+
+/* Header */
+.header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: #fec63e;
+	padding: 15px 0;
+	z-index: 1;
+}
+
+.header-menu {
+	text-align: right;
+	
+}
+
+.header-menu ul li {
+	display: inline-block;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.header-menu ul li a {
+	color: #000;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 25px;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	padding: 10px 0;
+	transition: all .2s ease-in-out;
+}
+
+.header-menu ul li a:hover {
+	color: #fff;
+}
+
+.header-menu ul li a.menu--active {
+	color: #fff
+}
+/* Intro */
+
+.intro {
+	margin-top: 92px;
+	width: 100%;
+	height: 380px;
+	background: url(../img/foto-intro.jpg) no-repeat center;
+	background-size: cover;
+	text-align: center;
+	padding-top: 80px;
+}
+
+.intro h1 {
+	font-size: 48px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.quote-extern {
+	max-width: 360px;
+	margin: 0 auto;
+	color: #fff;
+	margin-bottom: 40px;
+}
+
+.quote-extern p {
+	font-style: italic;
+}
+
+.quote-extern p:before, .quote-extern p:after {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: #fff;
+	margin: 14px auto 10px auto;
+}
+
+.quote-extern cite {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+}
+
+.intern-intro {
+	width: 100%;
+	margin-top: 92px;
+	height: 160px;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.intern-intro h1 {
+	font-size: 36px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.intern-intro h1:after {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: #fff;
+	margin: 6px auto 10px auto;
+}
+
+.intern-intro p {
+	color: #fff;
+}
+
+/* PRODUTOS */
+
+.products {
+	padding: 60px 0;
+}
+
+.products-list li {
+	background: #fec63e;
+	text-align: center;
+}
+
+.products-list li h3 {
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	margin-top: 20px;
+}
+
+.products-list li h3:after {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: #000;
+	margin: 2px auto;
+}
+
+.products-list li p {
+	padding: 10px 20px 20px;
+}
+
+.product-icon {
+	background: #000;
+	padding: 20px;
+}
+
+.product-icon img {
+	margin: 0 auto;
+}
+
+.call {
+	padding-top: 40px;
+	text-align: center;
+	clear: both;
+}
+
+.call p {
+	margin-bottom: 20px;
+}
+
+/* Portfólio */
+.portfolio {
+	width: 100%;
+	background: #000;
+	padding: 40px 0;
+}
+
+.portfolio .subtitle {
+	color: #fec63e;
+}
+
+.portfolio .subtitle:after {
+	background: #fec63e;
+}
+
+.portfolio .call p {
+	color: #fff;
+}
+
+.portfolio-list li:last-child {
+	margin-top: 20px;
+}
+
+.footer-break {
+	background: #ccc url(../img/foto-quebra.jpg) no-repeat center;
+	background-size: cover;
+	width: 100%;
+	height: 220px;
+	text-align: center;
+}
+
+.footer-break .quote-extern {
+	max-width: 400px;
+	padding-top: 40px;
+}
+
+/* ABOUT */
+
+.about {
+	padding: 60px 0;
+	position: relative;
+}
+
+.about img {
+	margin: 0 auto;
+}
+
+.about:after {
+	content: "";
+	background: url(../img/about-lines.png) no-repeat center;  
+	position: absolute;
+	width: 646px;
+	height: 106px;
+	top: 190px;
+	left: 156px;
+	z-index: -1;
+}
+
+.about-list {
+	padding-top: 20px;
+	overflow: auto;
+}
+.about-list li {
+	text-align: center;
+	padding: 0 40px;
+}
+
+.about-list li h3 {
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	margin-top: 20px;
+}
+
+.about-list li h3:after {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: #000;
+	margin: 6px auto;
+}
+
+/* FOOTER */
+
+.footer-infos {
+	width: 100%;
+	background: #000;
+	color: #fff;
+	padding: 20px 0;
+}
+
+
+.footer-infos h3 {
+	color: #fec63e;
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	font-weight: bold;
+	position: relative;
+}
+
+.footer-infos h3:after {
+	content: "";
+	height: 3px;
+	width: 60px;
+	background: #fec63e;
+	display: block;
+	margin: 6px 0 12px 0;
+}
+
+.footer-infos__history {
+	padding-right: 40px;
+}
+
+.footer-infos__contact li {
+	font-size: 14px;
+	line-height: 20px;
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+.footer-infos__social ul li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.footer-infos__social ul li a {
+	border: 3px solid #fec63e;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 6px;
+	transition: all .25s ease-in-out;
+}
+
+.footer-infos__social ul li a:hover {
+	border-color: #fff;
+}
+
+.footer-note {
+	background: #fec63e;
+	width: 100%;
+	padding: 20px 0;
+}

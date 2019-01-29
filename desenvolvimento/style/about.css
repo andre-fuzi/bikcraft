@@ -1,0 +1,26 @@
+.intro-about {
+	background: url(../img/about-intro.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.about-mission {
+	padding-top: 60px;
+}
+
+.about-mission p{
+	font-size: 18px;
+	line-height: 25px;
+	margin-bottom: 1em;
+	padding-right: 60px;
+}
+
+.about-mission ul li {
+	font-family: Georgia, serif;
+	font-size: 18px;
+	line-height: 25px;
+	margin-bottom: 10px;
+}
+
+.photo-about {
+	padding-top: 20px;
+}

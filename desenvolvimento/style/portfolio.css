@@ -1,0 +1,36 @@
+.portfolio-intro {
+	background: url("../img/portfolio-intro.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.portfolio-quote {
+	padding: 60px 0;
+}
+
+.quote-client {
+	max-width: 500px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.quote-client p {
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
+	font-family: Georgia, serif;
+	font-style: italic;
+	margin-bottom: 20px;
+}
+
+.quote-client cite {
+	font-size: 18px;
+	line-height: 25px;
+	font-weight: bold;
+	float: right;
+	font-style: normal;
+	font-family: Georgia, serif;
+}
+
+.portfolio-content {
+	margin-bottom: 60px;
+}
