@@ -389,3 +389,71 @@ img {
 	width: 100%;
 	padding: 20px 0;
 }
+
+@media only screen and (max-width: 959px) {
+.intro {
+	margin-top: 77px;
+}
+.about img {
+    transform: scale(.8);
+}
+
+.about-list li {
+	padding: 0;
+}
+
+.about:after {
+	top: 182px;
+	left: 60px;
+    transform: scale(.8);
+}
+
+.footer-infos__social ul li a {
+	width: 42px;
+	height: 42px;
+}
+}
+
+@media only screen and (max-width: 767px) {
+.call {
+ padding-top: 10px;
+}
+
+.header{
+	position: relative;
+	padding-bottom: 0;
+}
+
+.header img {
+	margin: 0 auto 10px;
+}
+
+.header-menu {
+	text-align: center;
+}
+
+.header-menu ul li {
+	margin: 5px;
+}
+
+.header-menu ul li a {
+	border: 4px solid #000;
+	width: 135px;
+	display: block;
+	float: left;
+}
+
+.intro {
+	margin-top: 0;
+	padding-top: 40px;
+}
+
+.intro h1 {
+	font-size: 36px;
+}
+
+.about:after {
+	display: none;
+}
+
+}
