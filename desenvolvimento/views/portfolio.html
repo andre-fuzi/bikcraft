@@ -2,13 +2,24 @@
 <html>
 <head>
 	<title>Bikcraft - Portfolio</title>
+	<meta name="description" content="Compre a sua bicicleta personalizada na Bikcraft. Possuímos modelos passeio, esporte e retrô.">
 	<meta charset="utf-8">
+	
+	<meta property="og:type" content="website"/>
+	<meta property="og:title" content="Bikcraft - Bicicletas Personalizadas"/>
+	<meta property="og:description" content="Compre a sua bicicleta personalizada na Bikcraft. Possuímos modelos passeio, esporte e retrô."/>
+	<meta property="og:url" content="https://bikcraft.com.br"/>
+	<meta property="og:image" content="https://bikcraft.com.br/img/og-image.png"/>
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="shortchut icon" href="favicon.ico">
 	<link rel="stylesheet" type="text/css" href="../style/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../style/reset.css">
 	<link rel="stylesheet" type="text/css" href="../style/grid.css">
 	<link rel="stylesheet" type="text/css" href="../style/style.css">
 	<link rel="stylesheet" type="text/css" href="../style/portfolio.css">
+	<script src='../js/libs/modernizr.custom.45655.js'></script>
 </head>
 <body>
 	<header class="header">
@@ -34,20 +45,49 @@
 		</div>
 	</section>
 
-	<section class="portfolio-quote container">
-		<blockquote class="quote-client">
-			<p>“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.”</p>
-			<cite>Barbara Moss</cite>
-		</blockquote>
+	<section class="portfolio-quote container first-content-intern">
+		<ul class="rslides quotes-portfolio">
+			<li>
+				<blockquote class="quote-client">
+					<p>“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.”</p>
+					<cite>Barbara Moss</cite>
+				</blockquote>
+			</li>
+			<li>
+				<blockquote class="quote-client">
+					<p>“It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.”</p>
+					<cite>Melinda Ola</cite>
+				</blockquote>
+			</li>
+			<li>
+				<blockquote class="quote-client">
+					<p>“There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.”</p>
+					<cite>Heineken</cite>
+				</blockquote>
+			</li>
+		</ul>
+		
 	</section>
 
 	<section class="portfolio-content portfolio">
 		<div class="container">
 			<h2 class="subtitle">Portfólio</h2>
-			<ul class="portfolio-list">
-				<li class="grid-8"><img src="../img/portfolio-passeio.jpg" alt="Bicicleta Passeio"></li>
-				<li class="grid-8"><img src="../img/portfolio-retro.jpg" alt="Bicicleta retro"></li>
-				<li class="grid-16"><img src="../img/portfolio-esporte.jpg" alt="Bicicleta esporte"></li>
+			<ul class="rslides portfolio-slide">
+				<li class="portfolio-list">
+					<div class="grid-8"><img src="../img/portfolio-passeio.jpg" alt="Bicicleta Passeio"></div>
+					<div class="grid-8"><img src="../img/portfolio-retro.jpg" alt="Bicicleta retro"></div>
+					<div class="grid-16"><img src="../img/portfolio-esporte.jpg" alt="Bicicleta esporte"></div>
+				</li>
+				<li class="portfolio-list">
+					<div class="grid-8"><img src="../img/portfolio-retro.jpg" alt="Bicicleta retro"></div>
+					<div class="grid-8"><img src="../img/portfolio-passeio.jpg" alt="Bicicleta Passeio"></div>
+					<div class="grid-16"><img src="../img/portfolio-esporte.jpg" alt="Bicicleta esporte"></div>
+				</li>
+				<li class="portfolio-list">
+					<div class="grid-8"><img src="../img/portfolio-passeio.jpg" alt="Bicicleta Passeio"></div>
+					<div class="grid-8"><img src="../img/portfolio-retro.jpg" alt="Bicicleta retro"></div>
+					<div class="grid-16"><img src="../img/portfolio-esporte.jpg" alt="Bicicleta esporte"></div>
+				</li>	
 			</ul>
 		</div>
 	</section>
@@ -93,6 +133,13 @@
 			</div>
 		</div>
 	</footer>
+<!-- JQUERY -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript"> 
+		window.jQuery || document.write("<script type='ext/javascript' src='../js/libs/jquery-3.1.1.js'><\/script>");
+	</script>
 
+	<script type="text/javascript" src='../js/plugins.js'></script>
+	<script type="text/javascript" src='../js/main.js'></script>
 </body>
 </html>

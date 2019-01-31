@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<title>Bikcraft</title>
+	<title>Bikcraft - Bicicletas Personalizadas</title>
+	<meta name="description" content="Compre a sua bicicleta personalizada na Bikcraft. Possuímos modelos passeio, esporte e retrô.">
 	<meta charset="utf-8">
+	
+	<meta property="og:type" content="website"/>
+	<meta property="og:title" content="Bikcraft - Bicicletas Personalizadas"/>
+	<meta property="og:description" content="Compre a sua bicicleta personalizada na Bikcraft. Possuímos modelos passeio, esporte e retrô."/>
+	<meta property="og:url" content="https://bikcraft.com.br"/>
+	<meta property="og:image" content="https://bikcraft.com.br/img/og-image.png"/>
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="icon" href="../img/favicon.ico">
+
 	<link rel="stylesheet" type="text/css" href="../style/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../style/reset.css">
 	<link rel="stylesheet" type="text/css" href="../style/grid.css">
 	<link rel="stylesheet" type="text/css" href="../style/style.css">
-
+	<script src='../js/libs/modernizr.custom.45655.js'></script>
 </head>
 <body>
 	
@@ -39,7 +50,7 @@
 		</div>
 	</section>
 
-	<section class="products container">
+	<section class="products container first-content">
 		<h2 class="subtitle">Produtos</h2>
 		<ul class="products-list">
 			<li class="grid-1-3">
@@ -74,10 +85,22 @@
 	<section class="portfolio">
 		<div class="container">
 			<h2 class="subtitle">Portfólio</h2>
-			<ul class="portfolio-list">
-				<li class="grid-8"><img src="../img/portfolio-passeio.jpg" alt="Bicicleta Passeio"></li>
-				<li class="grid-8"><img src="../img/portfolio-retro.jpg" alt="Bicicleta retro"></li>
-				<li class="grid-16"><img src="../img/portfolio-esporte.jpg" alt="Bicicleta esporte"></li>
+			<ul class="rslides portfolio-slide">
+				<li class="portfolio-list">
+					<div class="grid-8"><img src="../img/portfolio-passeio.jpg" alt="Bicicleta Passeio"></div>
+					<div class="grid-8"><img src="../img/portfolio-retro.jpg" alt="Bicicleta retro"></div>
+					<div class="grid-16"><img src="../img/portfolio-esporte.jpg" alt="Bicicleta esporte"></div>
+				</li>
+				<li class="portfolio-list">
+					<div class="grid-8"><img src="../img/portfolio-retro.jpg" alt="Bicicleta retro"></div>
+					<div class="grid-8"><img src="../img/portfolio-passeio.jpg" alt="Bicicleta Passeio"></div>
+					<div class="grid-16"><img src="../img/portfolio-esporte.jpg" alt="Bicicleta esporte"></div>
+				</li>
+				<li class="portfolio-list">
+					<div class="grid-8"><img src="../img/portfolio-passeio.jpg" alt="Bicicleta Passeio"></div>
+					<div class="grid-8"><img src="../img/portfolio-retro.jpg" alt="Bicicleta retro"></div>
+					<div class="grid-16"><img src="../img/portfolio-esporte.jpg" alt="Bicicleta esporte"></div>
+				</li>	
 			</ul>
 			<div class="call">
 				<p>Conheça mais o nosso portfólio</p>
@@ -151,5 +174,13 @@
 		</div>
 	</footer>
 
+	<!-- JQUERY -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript"> 
+		window.jQuery || document.write("<script type='ext/javascript' src='../js/libs/jquery-3.1.1.js'><\/script>");
+	</script>
+
+	<script type="text/javascript" src='../js/plugins.js'></script>
+	<script type="text/javascript" src='../js/main.js'></script>
 </body>
 </html>

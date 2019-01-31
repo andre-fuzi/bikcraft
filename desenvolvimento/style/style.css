@@ -15,6 +15,25 @@ img {
 	max-width: 100%;
 }
 
+.formphp label.nao-aparece, .formphp input.nao-aparece {
+	display: none !important;
+}
+
+#form-erro span, #form-send span  {
+	font-size: 18px;
+	line-height: 25px;
+	margin-bottom: 10px;
+	display: block;
+}
+
+#form-send {
+	color: #31aa39;
+}
+
+#form-erro {
+	color: #f64540;
+}
+
 .btn {
 	border: 3px solid #fec63e;
 	padding: 10px 30px;
@@ -76,6 +95,63 @@ img {
 	margin: 8px 0;
 }
 
+/*! http://responsiveslides.com v1.55 by @viljamis */
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  width: 100%;
+  border: 0;
+  }
+
+.rslides_tabs {
+	margin-top: 15px;
+	text-align: center;
+}
+
+.rslides_tabs li {
+	display: inline;
+	margin: 0 5px;
+}
+
+.rslides_tabs li a {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: #1d1d1d;
+	color: #1d1d1d;
+	overflow: hidden;
+	border-radius: 50%;
+}
+
+li.rslides_here a {
+	background: #fec63e;
+	color: #fec63e;
+}
 /* Header */
 .header {
 	position: fixed;
@@ -83,7 +159,7 @@ img {
 	width: 100%;
 	background: #fec63e;
 	padding: 15px 0;
-	z-index: 1;
+	z-index: 10;
 }
 
 .header-menu {
@@ -261,7 +337,7 @@ img {
 	color: #fff;
 }
 
-.portfolio-list li:last-child {
+.portfolio-list div:last-child {
 	margin-top: 20px;
 }
 
@@ -389,6 +465,55 @@ img {
 	width: 100%;
 	padding: 20px 0;
 }
+
+
+/*ANIMAÇÕES*/
+
+.js .intro h1, .js .intro blockquote, .js .intro .btn, .js .first-content, .js .intern-intro h1, .js .intern-intro p, .js .first-content-intern {
+	opacity: 0;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+
 
 @media only screen and (max-width: 959px) {
 

@@ -2,14 +2,24 @@
 <html lang="pt-br">
 <head>
 	<title>Bikcraft</title>
+	<meta name="description" content="Compre a sua bicicleta personalizada na Bikcraft. Possuímos modelos passeio, esporte e retrô.">
 	<meta charset="utf-8">
+	
+	<meta property="og:type" content="website"/>
+	<meta property="og:title" content="Bikcraft - Bicicletas Personalizadas"/>
+	<meta property="og:description" content="Compre a sua bicicleta personalizada na Bikcraft. Possuímos modelos passeio, esporte e retrô."/>
+	<meta property="og:url" content="https://bikcraft.com.br"/>
+	<meta property="og:image" content="https://bikcraft.com.br/img/og-image.png"/>
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="shortchut icon" href="favicon.ico">
 	<link rel="stylesheet" type="text/css" href="../style/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../style/reset.css">
 	<link rel="stylesheet" type="text/css" href="../style/grid.css">
 	<link rel="stylesheet" type="text/css" href="../style/style.css">
 	<link rel="stylesheet" type="text/css" href="../style/products.css">
-
+	<script src='../js/libs/modernizr.custom.45655.js'></script>
 </head>
 <body>
 	
@@ -36,7 +46,7 @@
 		</div>
 	</section>
 
-	<section class="container product-content">
+	<section class="container product-content first-content-intern">
 		<div class="grid-11 product-title">
 			<h2>Passeio</h2>
 			<img src="../img/product-passeio-1.jpg" alt="bicicleta passeio">
@@ -106,16 +116,23 @@
 	<section class="product-budget">
 		<div class="container">
 			<h2 class="subtitle">Orçamento</h2>
-			<form class="product-form grid-8" action="">
-				<label for="name">Nome</label>
-				<input type="text" id="name">
+			<form action="../enviar.php" method="post" name="form" class="formphp product-form grid-8">
+				<label for="nome">Nome</label>
+				<input id="nome" name="nome" type="text">
 				<label for="email">E-mail</label>
-				<input type="text" id="email">
+				<input id="email" name="email" type="text">
 				<label for="telefone">Telefone</label>
-				<input type="text" id="telefone">
-				<label for="espec">Especificações</label>
-				<textarea name="espec" id="espec"></textarea>
-				<button type="submit" class="btn">Enviar</button>
+				<input id="telefone" name="telefone" type="text">
+
+				<label class="nao-aparece">Se você não é um robô, deixe em branco.</label>
+				<input type="text" class="nao-aparece" name="leaveblank">
+				<label class="nao-aparece">Se você não é um robô, não mude este campo.</label>
+				<input type="text" class="nao-aparece" name="dontchange" value="http://" >
+
+				<label for="mensagem">Especificações</label>
+				<textarea name="mensagem" id="mensagem"></textarea>
+
+				<button id="enviar" name="enviar" type="submit" class="btn">Enviar</button>
 			</form>
 			<div class="product-budget__info grid-8">
 				<h3>Dados</h3>
@@ -174,6 +191,13 @@
 			</div>
 		</div>
 	</footer>
+<!-- JQUERY -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript"> 
+		window.jQuery || document.write("<script type='ext/javascript' src='../js/libs/jquery-3.1.1.js'><\/script>");
+	</script>
 
+	<script type="text/javascript" src='../js/plugins.js'></script>
+	<script type="text/javascript" src='../js/main.js'></script>
 </body>
 </html>
