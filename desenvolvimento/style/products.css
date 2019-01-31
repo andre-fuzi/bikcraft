@@ -179,3 +179,48 @@ padding-right: 60px;
 .product-budget__info p {
 	margin-bottom: 5px;
 }
+
+@media only screen and (max-width: 959px) {
+
+.product-icon {
+	padding: 46px 0;
+}
+
+.product-info p {
+	font-size: 14px;
+	line-height: 20px;
+	height: 140px;
+}
+
+.product-info ul li {
+	width: 181px;
+	font-size: 14px;
+}
+
+}
+
+@media only screen and (max-width: 767px) {
+
+.product-title h2 {
+	font-size: 24px;
+    top: 25%;
+    left: 31%;
+}
+
+.product-info {
+	float: left;
+}
+.product-info ul li {
+    width: 149px;
+}
+
+.product-form, .product-budget__info ul {
+	padding: 0;
+}
+
+.product-form label, .product-budget__info span {
+	font-size: 14px;
+	line-height: 20px;
+}
+
+}

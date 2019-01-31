@@ -120,3 +120,23 @@ padding-right: 60px;
 .contact-map {
 	margin-bottom: 60px;
 }
+
+@media only screen and (max-width: 767px) {
+
+.contact {
+	margin-bottom: 0;
+}
+.contact-form {
+	padding: 0;
+}
+
+.contact-form label, .contact-info span {
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.contact-info ul li a img {
+	max-width: 24px;
+}
+
+}

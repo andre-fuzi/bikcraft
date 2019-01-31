@@ -391,9 +391,19 @@ img {
 }
 
 @media only screen and (max-width: 959px) {
+
+.header-menu ul li a.menu--active {
+	border-color: #fff;
+}
+
 .intro {
 	margin-top: 77px;
 }
+
+.intern-intro{
+	margin-top: 77px;
+}
+
 .about img {
     transform: scale(.8);
 }
@@ -450,6 +460,10 @@ img {
 
 .intro h1 {
 	font-size: 36px;
+}
+
+.intern-intro {
+	margin-top: 0;
 }
 
 .about:after {

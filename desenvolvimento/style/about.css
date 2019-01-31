@@ -24,3 +24,21 @@
 .photo-about {
 	padding-top: 20px;
 }
+
+@media only screen and (max-width: 959px) {
+
+}
+
+@media only screen and (max-width: 767px) {
+.about-mission p {
+	padding-right: 10px;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.about-mission ul li {
+	font-size: 14px;
+	line-height: 25px;
+}
+
+}
