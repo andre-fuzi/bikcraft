@@ -2,8 +2,8 @@
 
 // Mudar Aqui
 
-$email_envio = ''; // E-mail receptor
-$email_pass = ''; // Senha do e-mail
+$email_envio = 'akf.teste@gmail.com'; // E-mail receptor
+$email_pass = '!Q@W3e4r'; // Senha do e-mail
 
 $site_name = ''; // Nome do Site
 $site_url = ''; // URL do Site
